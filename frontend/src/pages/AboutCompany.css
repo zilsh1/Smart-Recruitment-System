@@ -1,0 +1,135 @@
+.company-section {
+    padding: 20px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    box-sizing: border-box;
+  }
+  
+  .company-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Align items at the start (top) */
+    justify-content: space-between;
+    margin-bottom: 20px; /* Space between content and image */
+  }
+  
+  .company-info {
+    flex: 1;
+    margin-left: 20px; /* Space between text and image */
+  }
+  
+  .company-photo {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .company-photo img {
+    width: 70%; /* Image size 70% of its container width */
+    height: auto;
+    max-width: 100%; /* Ensure image does not exceed its container */
+  }
+  
+  .separator {
+    width: 100%;
+    border: 0;
+    border-top: 2px solid #ddd; /* Line separator style */
+    margin: 20px 0;
+  }
+  
+  .metrics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .metrics-title {
+    margin-bottom: 20px;
+    font-size: 1.5em; /* Increase font size for the title */
+  }
+  
+  .metrics-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; /* Increased gap between metrics */
+    text-align: center;
+  }
+  
+  .metric-card {
+    background: #f0f0f0;
+    padding: 20px; /* Increased padding for larger cards */
+    border-radius: 8px;
+    flex: 1;
+    min-width: 350px; /* Ensure cards have a minimum width */
+  }
+  
+  .metric-number {
+    font-size: 2.5em; /* Increased font size for numbers */
+    margin: 0;
+  }
+  
+  .metric-label {
+    font-size: 1.2em; /* Increased font size for labels */
+    margin: 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .company-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .company-info {
+      margin-left: 0;
+      margin-bottom: 20px; /* Space between content and image on small screens */
+    }
+  
+    .company-photo img {
+        padding-top: 50px;
+      width: 100%; /* Image takes full width on small screens */
+    }
+  
+    .metrics-title {
+      font-size: 1.2em; /* Adjust title font size for smaller screens */
+    }
+  
+    .metrics-content {
+      gap: 20px; /* Adjust gap between metrics for smaller screens */
+    }
+  
+    .metric-card {
+      min-width: 150px; /* Adjust card width for smaller screens */
+    }
+  
+    .metric-number {
+      font-size: 2em; /* Adjust number font size for smaller screens */
+    }
+  
+    .metric-label {
+      font-size: 1em; /* Adjust label font size for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .metrics-title {
+      font-size: 1em; /* Further adjust title font size for very small screens */
+    }
+  
+    .metrics-content {
+      gap: 15px; /* Further adjust gap between metrics for very small screens */
+    }
+  
+    .metric-card {
+      min-width: 120px; /* Further adjust card width for very small screens */
+    }
+  
+    .metric-number {
+      font-size: 1.5em; /* Further adjust number font size for very small screens */
+    }
+  
+    .metric-label {
+      font-size: 0.9em; /* Further adjust label font size for very small screens */
+    }
+  }
+  

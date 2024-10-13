@@ -1,0 +1,78 @@
+/* General container styling */
+.container-xxl {
+  font-family: 'Arial', sans-serif; /* Default font */
+}
+
+/* Title styling */
+.text-center {
+  font-family: 'Poppins', sans-serif; /* Change the title font */
+  font-weight: 700;
+  color: #333; /* Dark gray color for the title */
+}
+
+/* Testimonial item styling */
+.testimonial-item {
+  background-color: #f8f9fa; /* Light background for testimonials */
+  border: 1px solid #e2e3e5; /* Border around each testimonial */
+  transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-item:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Quote icon styling */
+.fa-quote-left {
+  color: #6c757d; /* Muted gray for the quote icon */
+}
+
+/* Text styling */
+.testimonial-item p {
+  font-family: 'Georgia', serif; /* Font for the testimonial text */
+  font-size: 1rem;
+  color: #555; /* Darker gray for readability */
+  margin-bottom: 1.5rem; /* Spacing below text */
+  line-height: 1.6;
+}
+
+/* Name styling */
+.testimonial-item h5 {
+  font-family: 'Poppins', sans-serif; /* Font for the name */
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50; /* Dark blue-gray color for the name */
+}
+
+/* Profession styling */
+.testimonial-item small {
+  font-family: 'Roboto', sans-serif; /* Font for the profession */
+  font-size: 0.9rem;
+  color: #6c757d; /* Muted gray color */
+}
+
+/* Client image styling */
+.img-fluid {
+  border: 2px solid #6c757d; /* Border around the image */
+  padding: 3px;
+}
+
+/* Custom arrow styles */
+.slick-prev,
+.slick-next {
+  color: purple; /* Change arrow color to purple */
+  z-index: 1; /* Ensure the arrows are on top */
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: purple; /* Change arrow color to purple */
+}
+
+/* Adjust the positioning and size of the arrows, if necessary */
+.slick-prev {
+  left: -35px; /* Adjust this value to position the arrow */
+}
+
+.slick-next {
+  right: -35px; /* Adjust this value to position the arrow */
+}

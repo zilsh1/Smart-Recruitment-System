@@ -1,0 +1,598 @@
+.Register {
+  display: grid;
+  place-content: center;
+  height: 120vh;
+  background: linear-gradient(to right, #32a852, #b2d3b8);
+  width: 100%;
+}
+
+.register_form {
+  margin-top: 80px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.register_title {
+  font-size: 24px;
+  color: #32a852;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.register_message {
+  color: #3c763d;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.register_input {
+  border: none;
+  border-bottom: 2px solid #32a852;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  transition: 0.3s;
+}
+
+.register_input:focus {
+  border-bottom: 2px solid #3c763d;
+}
+
+.registerForm_button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #32a852;
+  color: white;
+  padding: 12px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background-color: #3c763d;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+.signin
+{
+  margin-top: 20px;
+  text-align: center;
+}
+.signintext
+{
+  color:#30db33;
+  text-decoration: none;
+  font-weight: bold;
+}
+.signup {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup a {
+  color: #32a852;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #2e7d32;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #616161;
+}
+
+.jobPostContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footerMessage {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 1rem;
+  color: #388e3c;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal Content */
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Modal Header */
+.modalHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.companyLogo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+/* Modal Title */
+.modalContent h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Modal Details */
+.modalContent h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #666;
+}
+
+.modalContent p {
+  margin: 10px 0;
+  color: #444;
+}
+
+.modalContent p strong {
+  color: #333;
+}
+.profileContainer {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.companyCard {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.companyName {
+  font-size: 24px;
+  color: #333;
+}
+
+.companyDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.detailItem {
+  flex: 1;
+  min-width: 200px;
+}
+
+.detailItem h6 {
+  font-weight: bold;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.Profilecard {
+  --main-color: #000;
+  --submain-color: #78858f;
+  --bg-color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--bg-color);
+}
+
+.profile_bg {
+  background-image: url("https://img.freepik.com/premium-vector/business-people-group-silhouettes-city-landscape-modern-office-buildings_48369-15302.jpg?size=626&ext=jpg&ga=GA1.1.1525183143.1707571646&semt=ais_hybrid");
+  width: 500px;
+  height: 500px;
+  /* background-position: center; */
+  backdrop-filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-clip: unset;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.avtar {
+  width: 114px;
+  height: 114px;
+  background: var(--bg-color);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(50% - 57px);
+}
+
+.avtar img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--main-color);
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--submain-color);
+}
+.email {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+/* mobile view */
+@media (max-width: 768px) {
+  .profilecard {
+    padding-top: 100px;
+    margin-inline: auto;
+  }
+  .avtar {
+    position: absolute;
+    width: 114px;
+    height: 114px;
+    background: var(--bg-color);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+  }
+  .Register {
+    margin-inline: 10px;
+  }
+}
+.profilecard {
+  padding: 25px;
+  border-radius: 20px;
+  border: 2px solid darkblue;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0);
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 10px;
+}
+.skill {
+  background-color: darkblue;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+.skill b {
+  font-size: 15px;
+}
+/* From Uiverse.io by cssbuttons-io */
+.applybtn {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.applyshadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.applyedge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to left, skyblue, darkblue);
+}
+
+.front {
+  display: block;
+  position: relative;
+  padding: 12px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: darkblue;
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+.applybtn:hover {
+  filter: brightness(110%);
+}
+
+.applybtn:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.applybtn:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.applybtn:hover .applyshadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.applybtn:active .applyshadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.applybtn:focus:not(:focus-visible) {
+  outline: none;
+}
+.no1 {
+  color: rgb(254, 54, 54);
+  /* background-color: ; */
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+.heading {
+  color: black;
+  text-align: center;
+  font-size: 70px;
+}
+.posts {
+  padding: 50px;
+}
+.postText {
+  border-radius: 20px;
+  padding-inline: 20px;
+  padding-block: 5px;
+  color: #000;
+  font-weight: 700;
+  font-size: 10px;
+  background-color: #f5f5f5;
+}
+.main_card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  overflow-x: auto;
+  padding: 15px;
+}
+.jobpostbtn {
+  background-color: darkblue;
+  color: white;
+  border-radius: 20px;
+}
+
+.jobpostbtn:hover {
+  background-color: transparent;
+  border: 1px solid darkblue;
+  color: #78858f;
+}
+
+.postcard {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  transition: all 0.5s;
+  /* margin-right: 20px; */
+}
+.postcard:hover {
+  box-shadow: rgba(0, 0, 0, 0.54) 0px 3px 8px;
+}
+
+@media (max-width: 768px) {
+  .heading {
+    font-size: 40px;
+  }
+  .postcard {
+    scroll-snap-align: center;
+  }
+  .main_card {
+    width: 100%;
+    padding: 20px;
+    grid-template-columns: repeat(3, 100%);
+    gap: 16px;
+  }
+  .companyData {
+    margin-inline-start: 45px;
+  }
+}
+.companyData {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 40px;
+  transition: 0.5s all ease-in-out;
+  border-radius: 20px;
+  width: 500px;
+}
+.companyData:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 24px;
+}
+.parent_data {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-block: 20px;
+}
+.child_data {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.child_data h6 {
+  color: darkblue;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+  margin-top: 5px;
+}
+.Applications {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  transition: 0.5s all ease-in-out;
+}
+.ApplicationsCard {
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.5s all ease-in-out;
+}
+b button {
+  color: white;
+  background-color: darkblue;
+}
+@media (max-width: 768px) {
+  .Applications {
+    grid-template-columns: 1fr;
+    margin-inline: auto;
+  }
+  .ApplicationsCard {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 10%;
+  }
+  .email {
+    max-width: 150px;
+  }
+}
+
+.addpostbtn {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 1px solid darkblue;
+  background-color: white;
+}
